@@ -1,0 +1,19 @@
+<html>
+<body>
+SELECT COUNTRY NAME:
+<select id="s1" onchange="fun1()">
+<option>India</option>
+<option>nepal</option>
+<option>srilanka</option>
+</select><br>
+<b>country name:</b>
+<spam id="demo"></spam>
+</body>
+</html>
+ <script language="javascript">
+     function fun1()
+     {
+    //document.write(s1.value);
+    document.getElementById("demo").innerHTML=s1.value;
+    }
+</script>

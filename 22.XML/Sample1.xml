@@ -1,0 +1,27 @@
+<!DOCTYPE emps SYSTEM "emp.dtd">
+<emps>
+<emp empno="1">
+<ename>scott</ename>
+<sal>5000</sal>
+<phno>9877712121</phno>
+<address>hyd</address>
+</emp>
+<emp empno="2">
+<ename>martin</ename>
+<sal>4000</sal>
+<phno>9877712122</phno>
+<address>sec</address>
+</emp>
+<emp empno="3">
+<ename>james</ename>
+<sal>8000</sal>
+<phno>9877712123</phno>
+<phno>9877712124</phno>
+<address>nel</address>
+</emp>
+<emp empno="4">
+<ename>donald</ename>
+<sal>2000</sal>
+<address>ogl</address>
+</emp>
+</emps>

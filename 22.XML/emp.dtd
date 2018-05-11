@@ -1,0 +1,9 @@
+<!ELEMENT emps(emp+)>
+<!ELEMENT emp(ename,sal,phno*,address)>
+<!ATTLIST emp empno CDATA $REQUIRED>
+<!ATTLIST emp deptno CDATA "10">
+<!ATTLIST emp org CDATA #FIXED "Naraesh Technologies">
+<!ELEMENT ename(#PCDATA)>
+<!ELEMENT sal(#PCDATA)>
+<!ELEMENT phno(#PCDATA)>
+<!ELEMENT address(#PCDATA)>

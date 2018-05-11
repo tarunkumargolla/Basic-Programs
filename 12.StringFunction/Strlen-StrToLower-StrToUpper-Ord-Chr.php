@@ -1,0 +1,30 @@
+<?php
+$s="Hello World";
+echo "---------------------------","<br>";
+echo "Using strlen()","<br>";
+echo "we are retriving lenth of the string","<br>";
+echo "---------------------------","<br>";
+echo strlen($s),"<br>";
+echo "---------------------------","<br>";
+echo "Using strtolower()","<br>";
+echo "we will make string into lower case","<br>";
+echo "---------------------------","<br>";
+echo strtolower($s),"<br>";
+echo "---------------------------","<br>";
+echo "Using strtoupper()","<br>";
+echo "we will make string into upper case","<br>";
+echo "---------------------------","<br>";
+echo strtoupper($s),"<br>";
+echo "---------------------------","<br>";
+echo "Using ord()","<br>";
+echo "we are converting string into ASCI value","<br>";
+echo "---------------------------","<br>";
+echo ord("tarun"),"<br>";
+echo ord("a"),"<br>";
+echo ord("AB"),"<br>";
+echo "---------------------------","<br>";
+echo "Using chr()","<br>";
+echo "we are converting ASCI value into character","<br>";
+echo "---------------------------","<br>";
+echo chr(33),"<br>";
+?>

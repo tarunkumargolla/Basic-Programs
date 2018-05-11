@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<!--Employee Information-->
+<emps>
+<emp empno="1">
+<ename>scott</ename>
+<sal>5000</sal>    
+</emp>
+<emp empno="2">
+<ename>martin</ename>
+<sal>6000</sal>    
+</emp>
+</emps>

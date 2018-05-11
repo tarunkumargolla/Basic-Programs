@@ -1,0 +1,31 @@
+<html>
+<body>
+<table>
+<tr border="1">
+<th>UserName</th>
+<th><input type="text"id="uid"onblur="check()"/></th>
+</tr>
+<th>PassWord</th>
+<th><input type="password"id="pwd"onblur="check()"/></th>
+</tr>
+<th></th>
+<th><input type="button"id="b1"value="login"onclick="check()"/></th>
+</tr>
+</table>
+</body>
+</html>
+<script language="javascript">
+function check()
+{
+if(uid.value=="")
+{
+alert("must enter username");
+uid.focus();
+}
+else if(pwd.value=="")
+{
+alert("must enter password");
+pwd.focus();
+}
+}
+</script>

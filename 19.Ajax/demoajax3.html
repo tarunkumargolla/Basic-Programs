@@ -1,0 +1,35 @@
+<html>
+    <body>
+        <form method="GET">
+            <h2>Read all responds headers from php file using ajax</h2>
+            <input type="button"name="b1"value="click me"onclick="b1_click()"/><br>
+            <b>File Size:</b><br>
+            <span id="demo1"></span><br>
+            <b>File Type:</b><br>
+            <span id="demo2"></span><br>
+            <b>Server Name:</b><br>
+            <span id="demo3"></span><br>
+            <b>Date:</b>
+            <span id="demo4"></span>
+        </form>
+    </body>
+</html>
+
+<script>
+    function b1_click()
+    {
+        var s=new XMLHttpRequest();
+        s.open('GET',"index.php",true);
+        s.send();
+        s.onreadystatechange=function()
+        {
+            if(s.readyState==4&&s.status==200)
+            {
+                document.getElementById("demo1").innerHTML=s.getAllResponseHeaders("content-length");
+                document.getElementById("demo2").innerHTML=s.getAllResponseHeaders("content-type");
+                document.getElementById("demo3").innerHTML=s.getAllResponseHeaders('server');
+                document.getElementById("demo4").innerHTML=s.getAllResponseHeaders('date');
+            }
+        }
+    }
+    </script>

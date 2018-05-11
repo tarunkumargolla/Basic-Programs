@@ -1,0 +1,25 @@
+<html>
+    <body>
+        <form method="GET">
+            <h2>read data from txt file using ajax</h2>
+            <input type="button"name="b1"value="click me"onclick="b1_click()"/><br>
+            <b>Display Data:</b>
+            <span id="abc"></span>
+        </form>
+    </body>
+</html>
+<script>
+    function b1_click()
+    {
+        var s=new XMLHttpRequest();
+        s.open('GET',"index.php",true);
+        s.send();
+        s.onreadystatechange=function()
+        {
+            if(s.readyState==4&&s.status==200)
+            {
+                document.getElementById("abc").innerHTML=s.responseText;
+            }
+        }
+    }
+    </script>
