@@ -17,6 +17,9 @@ echo 'Difference: '.$difference->y.' years, '
     $Amount=$_POST["amt"];
     echo "Your Amount is =><b>$Amount</b>","<br>";
     $Rate=$_POST["rt"];
+    if(strlen($Rate) <2 ){
+    	$Rate = $Rate.".0";
+    }
     echo "Your Rate Of Intrest is =>Rupee <b>$Rate</b> Paise","<br>";
     $Year="_$difference->y";
     $Month=$difference->m;
